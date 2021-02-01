@@ -1,0 +1,20 @@
+.main-footer {
+    background-color: $color-primary;
+    color: #fff;
+    color: $color-secondary;
+    padding: 46px 0;
+
+    @media screen and (max-width: $bp-LG){
+        padding: 22px 0;
+    }
+
+    p{
+        font-size: 15px;
+        margin-bottom: 0;
+
+        @media screen and (max-width: $bp-LG){
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+}

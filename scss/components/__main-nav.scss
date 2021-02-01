@@ -1,0 +1,118 @@
+.main-nav {
+    background-color: $color-primary;
+    width: 100%;
+    padding: 40px 0;
+
+    @media screen and (max-width: $bp-MD){
+        padding: 26px 0;
+    }
+
+    .container{
+        position: relative;
+    }
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__links{
+        position: absolute;
+        right: 0;
+        top: 17px;
+        opacity: 0;
+        background-color: $color-secondary;
+        padding: 53px 40px 48px 82px;
+        width: 350px;
+        transition: all 0.4s;
+        pointer-events: none;
+        z-index: 10;
+        overflow: hidden;
+        transform: translateY(-30px);
+
+        @media screen and (max-width: $bp-MD){
+            width: 75vw;
+            top: 0px;
+            right: 20px;
+        }
+
+        &.active{
+            opacity: 1;
+            pointer-events: all;
+            transform: translateY(0px);
+        }
+
+        li{
+            color: $color-primary;
+            margin-bottom: 4px;
+            font-weight: bold;
+            font-size: 21px;
+
+            @media screen and (max-width: 330px){
+                font-size: 15px;
+            }
+
+            @media screen and (max-width: $bp-LG){
+                font-size: 18px;
+            }
+
+            &:hover, &.active{
+                color: #fff;
+            }
+
+            a{
+                color: inherit;
+                transition: all 0.4s;
+            }
+        }
+
+        .close{
+            position: absolute;
+            top: 14px;
+            right: 23px;
+            opacity: 1;
+            outline: none !important;
+            
+            img{
+                width: 11px;
+            }
+        }
+    }
+
+    &__brand{
+        img{
+            width: 360px;
+
+            @media screen and (max-width: $bp-MD){
+                width: 260px;
+            }
+        }
+    }
+
+    &__toggler{
+        position: relative;
+        cursor: pointer;
+        
+        @media screen and (max-width: $bp-MD){
+            padding-right: 6px;
+        }
+
+        img{
+            width: 9.8px;
+
+            @media screen and (max-width: $bp-MD){
+                width: 7px;
+            }
+        }
+
+        &::after{
+            content: '';
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            left: -15px;
+            top: -10px;
+        }
+    }
+}
