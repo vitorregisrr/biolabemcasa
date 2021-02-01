@@ -17,7 +17,8 @@
 body {
     position: relative;
     margin: 0;
-    background-color: #fff;
+    background: rgb(0,132,191);
+    background: linear-gradient(90deg, rgba(0,132,191,1) 42%, rgba(128,183,76,1) 76%);
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
     font-size: 16px;
