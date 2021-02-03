@@ -1,5 +1,4 @@
 .main-nav {
-    background-color: $color-primary;
     width: 100%;
     padding: 40px 0;
 
@@ -18,23 +17,19 @@
     }
 
     &__links{
-        position: absolute;
-        right: 0;
-        top: 17px;
-        opacity: 0;
-        background-color: $color-secondary;
-        padding: 53px 40px 48px 82px;
-        width: 350px;
-        transition: all 0.4s;
-        pointer-events: none;
-        z-index: 10;
-        overflow: hidden;
-        transform: translateY(-30px);
-
-        @media screen and (max-width: $bp-MD){
-            width: 75vw;
-            top: 0px;
-            right: 20px;
+        display: flex;
+    
+        @media screen and (max-width: $bp-LG){
+            position: absolute;
+            right: 0;
+            top: 17px;
+            opacity: 0;
+            width: 350px;
+            transition: all 0.4s;
+            pointer-events: none;
+            z-index: 10;
+            overflow: hidden;
+            transform: translateY(-30px);
         }
 
         &.active{
@@ -44,7 +39,7 @@
         }
 
         li{
-            color: $color-primary;
+            color: gray;
             margin-bottom: 4px;
             font-weight: bold;
             font-size: 21px;

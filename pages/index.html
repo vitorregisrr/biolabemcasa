@@ -85,18 +85,18 @@
 
     <body class="wow fadeIn">
         <!-- partial:../partials/__main-nav.html -->
-        <header class="main-header" data-wow-delay="0.1s">
+        <header class="main-header">
     <div class="container">
         <div class="row">
             <div class="col-lg-3">
-                <div class="main-nav__brand wow fadeIn" data-wow-delay="0.2s">
+                <div class="main-nav__brand wow fadeIn" data-wow-delay="0.3s">
                     <a href="../pages/index.html">
-                        <img src="../images/ico/brand.png" alt="Logo Paulo Freitas Ribeiro"/>
+                        <img src="../images/brands/biolabemcasa.png" alt="Logo Paulo Freitas Ribeiro"/>
                     </a>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <form class="search">
+            <div class="col-lg-6 ">
+                <form class="search wow fadeInUp" data-wow-delay="0.3s">
                     <label for="search"></label>
                     <div class="search-box">
                         <input type="text" placeholder="Faça sua busca">
@@ -106,7 +106,7 @@
                     </div>
                 </form>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 wow fadeIn" data-wow-delay="0.4s">
                 <div class="contact-tab">
                     <div class="sac">
                         <a href="phone:+5508007246522">
@@ -169,7 +169,243 @@
     <main>
         <div class="container">
             <div class="main-content">
-                
+                <section id="home-title" class="home-title">
+                    <h2 class="sm wow fadeInUp" data-wow-delay="0.2s">
+                        Encontre a Biolab mais próxima de vocêe receba produtos Biolab em casa
+                    </h2>
+                    <h2 class="lg wow fadeInUp d-none-d-lg-block" data-wow-delay="0.3s">
+                        Parceiros disponíveis<br/>
+                        <b>em todo Brasil</b>
+                    </h2>
+                </section>
+
+                <section id="home-banner" class="home-banner wow zoomIn" data-wow-delay="0.4s">
+                    <div class="home-banner__carousel owl-carousel owl-default">
+                        <div class="item">
+                            <img src="../images/bg/banner-12.png" alt="">
+                        </div>
+                    </div>
+                </section>
+
+                <section id="home-title d-flex d-lg-none" class="home-title">
+                    <h2 class="lg wow fadeInUp" data-wow-delay="0.3s">
+                        Parceiros disponíveis<br/>
+                        <b>em todo Brasil</b>
+                    </h2>
+                </section>
+
+                <section id="home-produtos" class="home-produtos">
+                    <div class="home-produtos__title">
+                        <h2 class="title wow fadeInUp" data-wow-delay="0.3s">
+                            Encontre o produto que você procura
+                        </h2>
+                    </div>
+
+                    <div class="home-produtos__buttons">
+                        <div class="row">
+                            <div class="col-3 wow fadeInUp" data-wow-delay="0.2s">
+                                <button data-target="#produto-tab-1" data-toggle="produto-tab">
+                                    <img src="../images/ico/produtos-1.png" alt="">
+                                    <h3 class="title">
+                                        Saúde Cardiovascular
+                                    </h3>
+                                </button>
+                            </div>
+
+                            <div class="col-3 wow fadeInUp" data-wow-delay="0.3s">
+                                <button data-target="#produto-tab-2" data-toggle="produto-tab">
+                                    <img src="../images/ico/produtos-2.png" alt="">
+                                    <h3 class="title">
+                                        Saúde Feminina
+                                    </h3>
+                                </button>
+                            </div>
+
+                            <div class="col-3 wow fadeInUp" data-wow-delay="0.4s">
+                                <button data-target="#produto-tab-3" data-toggle="produto-tab">
+                                    <img src="../images/ico/produtos-3.png" alt="">
+                                    <h3 class="title">
+                                        Mobilidade
+                                    </h3>
+                                </button>
+                            </div>
+
+                            <div class="col-3 wow fadeInUp" data-wow-delay="0.5s">
+                                <button data-target="#produto-tab-4" data-toggle="produto-tab">
+                                    <img src="../images/ico/produtos-4.png" alt="">
+                                    <h3 class="title">
+                                        Saúde Gastrointestinal
+                                    </h3>
+                                </button>
+                            </div>
+
+                            <div class="col-3 wow fadeInUp" data-wow-delay="0.2s">
+                                <button data-target="#produto-tab-5" data-toggle="produto-tab">
+                                    <img src="../images/ico/produtos-5.png" alt="">
+                                    <h3 class="title">
+                                        Pele, cabelo & unhas
+                                    </h3>
+                                </button>
+                            </div>
+
+                            <div class="col-3 wow fadeInUp" data-wow-delay="0.2s">
+                                <button data-target="#produto-tab-6" data-toggle="produto-tab">
+                                    <img src="../images/ico/produtos-6.png" alt="">
+                                    <h3 class="title">
+                                        Saúde Mental
+                                    </h3>
+                                </button>
+                            </div>
+
+                            <div class="col-3 wow fadeInUp" data-wow-delay="0.2s">
+                                <button data-target="#produto-tab-7" data-toggle="produto-tab">
+                                    <img src="../images/ico/produtos-7.png" alt="">
+                                    <h3 class="title">
+                                        Saúde Infantil
+                                    </h3>
+                                </button>
+                            </div>
+
+                            <div class="col-3 wow fadeInUp" data-wow-delay="0.2s">
+                                <button data-target="#produto-tab-8" data-toggle="produto-tab">
+                                    <img src="../images/ico/produtos-8.png" alt="">
+                                    <h3 class="title">
+                                        Saúde Geral
+                                    </h3>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home-produtos__tabs">
+                        <div class="row">
+                            <div class="col-3 wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="home-produto__tab" id="produto-tab-1">
+                                    <img src="../images/ico/produtos-1-w.png" alt="">
+                                    <h3 class="title">
+                                        Saúde Cardiovascular
+                                    </h3>
+
+                                    <p class="desc">
+                                        antitrombótico colesterol & dislipidemia doença arterial coronariana hipertensão
+                                        hipertireoidismo insuficiência cardíaca proteção endotelial
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-3 wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="home-produto__tab" id="produto-tab-2">
+                                    <img src="../images/ico/produtos-2-w.png" alt="">
+                                    <h3 class="title">
+                                        Saúde Feminina
+                                    </h3>
+
+                                    <p class="desc">
+                                        anticoncepcionais antifúngicos suplemento de ácido fólico terapia hormonal
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-3 wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="home-produto__tab" id="produto-tab-3">
+                                    <img src="../images/ico/produtos-3-w.png" alt="">
+                                    <h3 class="title">
+                                        Mobilidade
+                                    </h3>
+
+                                    <p class="desc">
+                                        dor músculos e articulações prevenção e tratamento da osteoporose
+                                        viscossuplementação vitaminas & minerais
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-3 wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="home-produto__tab" id="produto-tab-4">
+                                    <img src="../images/ico/produtos-4-w.png" alt="">
+                                    <h3 class="title">
+                                        Saúde Gastrointestinal
+                                    </h3>
+
+                                    <p class="desc">
+                                        anti-inflamatório intestinal conforto abdominal conforto gástrico saúde bucal
+                                        vômitos e náuseas
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-3 wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="home-produto__tab" id="produto-tab-5">
+                                    <img src="../images/ico/produtos-5-w.png" alt="">
+                                    <h3 class="title">
+                                        Pele, cabelo & unhas
+                                    </h3>
+                                    <p class="desc">
+                                        cuidados anti-idade cuidados com a pele cuidados com as unhas saúde capilar suor
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-3 wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="home-produto__tab" id="produto-tab-6">
+                                    <img src="../images/ico/produtos-6-w.png" alt="">
+                                    <h3 class="title">
+                                        Saúde Mental
+                                    </h3>
+                                    <p class="desc">
+                                        ansiedade & depressão doença de alzheimer dor epilepsia insônia transtorno
+                                        bipolar & esquizofrenia
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-3 wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="home-produto__tab" id="produto-tab-7">
+                                    <img src="../images/ico/produtos-7-w.png" alt="">
+                                    <h3 class="title">
+                                        Saúde Infantil
+                                    </h3>
+                                    <p class="desc">
+                                        cuidados para a primeira dentição nutrição infantil vitaminas & minerais
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-3 wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="home-produto__tab" id="produto-tab-8">
+                                    <img src="../images/ico/produtos-8-w.png" alt="">
+                                    <h3 class="title">
+                                        Saúde Geral
+                                    </h3>
+                                    <p class="desc">
+                                        antibióticos
+                                        antifúngicos
+                                        higiene e hidratação nasal
+                                        imunidade
+                                        prevenção e tratamento da osteoporose
+                                        saúde bucal
+                                        vitaminas & minerais
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section id="home-banner-2" class="home-banner wow zoomIn" data-wow-delay="0.3s">
+                    <div class="home-banner__carousel owl-carousel owl-default v2">
+                        <div class="item">
+                            <img src="../images/bg/banner-1.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="../images/bg/banner-10.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="../images/bg/banner-11.png" alt="">
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </main>
@@ -179,17 +415,30 @@
    <div class="container">
        <div class="row">
            <div class="col-lg-4">
-               
+               <div class="brand">
+                   <img src="../images/brands/biolabfarmaceutica.png" alt="">
+               </div>
            </div>
            <div class="col-lg-4 justify-content-lg-center">
-
+            <div class="caption">
+                <a href="phone:+5508007246522"></a>
+                <sm class="mail">
+                    faleconosco@biolabfarma.com.br
+                </sm>
+            </div>
            </div>
            <div class="col-lg-4 justify-content-lg-end">
-
+            <h3 class="title">
+                EVOLUIR É VITAL
+            </h3>
            </div>
        </div>
    </div>
 </footer>
+    <!-- partial -->
+    
+    <!-- partial:../partials/__footer.html -->
+        
     <!-- partial -->
 
 </body>
