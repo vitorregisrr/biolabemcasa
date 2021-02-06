@@ -1,26 +1,28 @@
 <header class="main-header">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="main-nav__brand wow fadeIn" data-wow-delay="0.3s">
+        <div class="row justify-content-end">
+            <div class="col-7 order-1 col-lg-3">
+                <div class="main-header__brand wow fadeInLeft" data-wow-delay="0.3s">
                     <a href="../pages/index.html">
                         <img src="../images/brands/biolabemcasa.png" alt="Logo Paulo Freitas Ribeiro"/>
                     </a>
                 </div>
             </div>
-            <div class="col-lg-6 ">
-                <form class="search wow fadeInUp" data-wow-delay="0.3s">
-                    <label for="search"></label>
+            <div class="col-9 order-3 order-lg-2 col-lg-6">
+                <form class="main-header__search wow fadeIn" data-wow-delay="0.5s">
+                    <a href="#" data-toggle="popup" data-target="popup-cadastro" for="search" class="link">
+                       <img src="../images/ico/arrow-right.png" alt=""> Cadastre-se para receber novidades da Biolab
+                    </a>
                     <div class="search-box">
                         <input type="text" placeholder="Faça sua busca">
                         <button type="submit">
-                            <img src="../images/ico/search-white.png" alt=""/>
+                            <img src="../images/ico/search-w.png" alt="#"/>
                         </button>
                     </div>
                 </form>
             </div>
-            <div class="col-lg-3 wow fadeIn" data-wow-delay="0.4s">
-                <div class="contact-tab">
+            <div class="col-5 order-2 order-lg-3 col-lg-3 wow fadeInRight" data-wow-delay="0.4s">
+                <div class="main-header__contact">
                     <div class="sac">
                         <a href="phone:+5508007246522">
                             SAC 0800 724 6522
@@ -48,17 +50,12 @@
         <div class="main-nav__content">
             <div class="main-nav__menu">
                 <buttton
-                    class="main-nav__toggler wow fadeInRight"
-                    data-wow-delay="0.3s"
+                    class="main-nav__toggler"
                     data-toggle="nav-links">
-                    <img src="../images/ico/toggler.png" alt=""/>
+                    <img class="bars" src="../images/ico/toggler.png" alt=""/>
+                    <img class="times" src="../images/ico/times.png" alt=""/>
                 </buttton>
                 <ul id="nav-links" class="main-nav__links">
-                    <button class="close" data-toggle="nav-links">
-                        <buttton class="toggler" data-active="false">
-                            <img src="../images/ico/times.png" alt=""/>
-                        </buttton>
-                    </button>
                     <li class="active">
                         <a href="../pages/index.html">Home</a>
                     </li>

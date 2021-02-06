@@ -4,6 +4,25 @@
     <head>
         <!-- partial:../partials/__head.html -->
 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -42,6 +61,7 @@
         <meta name="twitter:site" content="@app">
 
         <!-- Load Font -->
+       
 
         <!-- Vendor JS -->
         <script src="../vendors/js/vendor.bundle.base.js" defer></script>
@@ -67,91 +87,107 @@
             integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
             crossorigin="anonymous"> -->
 
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <!-- partial -->
     </head>
 
     <body class="wow fadeIn">
         <!-- partial:../partials/__main-nav.html -->
         <header class="main-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="main-nav__brand wow fadeIn" data-wow-delay="0.3s">
-                            <a href="../pages/index.html">
-                                <img src="../images/brands/biolabemcasa.png" alt="Logo Paulo Freitas Ribeiro"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 ">
-                        <form class="search wow fadeInUp" data-wow-delay="0.3s">
-                            <label for="search"></label>
-                            <div class="search-box">
-                                <input type="text" placeholder="Faça sua busca">
-                                <button type="submit">
-                                    <img src="../images/ico/search-white.png" alt=""/>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-lg-3 wow fadeIn" data-wow-delay="0.4s">
-                        <div class="contact-tab">
-                            <div class="sac">
-                                <a href="phone:+5508007246522">
-                                    SAC 0800 724 6522
-                                </a>
-                            </div>
-                            <div class="social">
-                                <a href="#">
-                                    <img src="../images/ico/ico-facebook.png" alt="#" class="ico">
-                                </a>
-                                <a href="#">
-                                    <img src="../images/ico/ico-instagram.png" alt="#" class="ico">
-                                </a>
-                                <a href="#">
-                                    <img src="../images/ico/ico-linkedin.png" alt="#" class="ico">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-7 order-1 col-lg-3">
+                <div class="main-header__brand wow fadeInLeft" data-wow-delay="0.3s">
+                    <a href="../pages/index.html">
+                        <img src="../images/brands/biolabemcasa.png" alt="Logo Paulo Freitas Ribeiro"/>
+                    </a>
                 </div>
             </div>
-        </header>
-
-        <nav class="main-nav wow fadeIn" data-wow-delay="0.2s" id="main-nav">
-            <div class="container">
-                <div class="main-nav__content">
-                    <div class="main-nav__menu">
-                        <buttton
-                            class="main-nav__toggler wow fadeInRight"
-                            data-wow-delay="0.3s"
-                            data-toggle="nav-links">
-                            <img src="../images/ico/toggler.png" alt=""/>
-                        </buttton>
-                        <ul id="nav-links" class="main-nav__links">
-                            <button class="close" data-toggle="nav-links">
-                                <buttton class="toggler" data-active="false">
-                                    <img src="../images/ico/times.png" alt=""/>
-                                </buttton>
-                            </button>
-                            <li class="active">
-                                <a href="../pages/index.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="../pages/categorias.html">Categorias</a>
-                            </li>
-                            <li>
-                                <a href="../pages/produtos.html">Produtos</a>
-                            </li>
-                            <li>
-                                <a href="../pages/programa.html">Programa Saúde em Evolução</a>
-                            </li>
-                        </ul>
+            <div class="col-9 order-3 order-lg-2 col-lg-6">
+                <form class="main-header__search wow fadeIn" data-wow-delay="0.5s">
+                    <a href="#" data-toggle="popup" data-target="popup-cadastro" for="search" class="link">
+                       <img src="../images/ico/arrow-right.png" alt=""> Cadastre-se para receber novidades da Biolab
+                    </a>
+                    <div class="search-box">
+                        <input type="text" placeholder="Faça sua busca">
+                        <button type="submit">
+                            <img src="../images/ico/search-w.png" alt="#"/>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-5 order-2 order-lg-3 col-lg-3 wow fadeInRight" data-wow-delay="0.4s">
+                <div class="main-header__contact">
+                    <div class="sac">
+                        <a href="phone:+5508007246522">
+                            SAC 0800 724 6522
+                        </a>
+                    </div>
+                    <div class="social">
+                        <a href="#">
+                            <img src="../images/ico/ico-facebook.png" alt="#" class="ico">
+                        </a>
+                        <a href="#">
+                            <img src="../images/ico/ico-instagram.png" alt="#" class="ico">
+                        </a>
+                        <a href="#">
+                            <img src="../images/ico/ico-linkedin.png" alt="#" class="ico">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </nav>
-    <!-- partial -->
+    </div>
+</header>
+
+<nav class="main-nav wow fadeIn" data-wow-delay="0.2s" id="main-nav">
+    <div class="container">
+        <div class="main-nav__content">
+            <div class="main-nav__menu">
+                <buttton
+                    class="main-nav__toggler"
+                    data-toggle="nav-links">
+                    <img class="bars" src="../images/ico/toggler.png" alt=""/>
+                    <img class="times" src="../images/ico/times.png" alt=""/>
+                </buttton>
+                <ul id="nav-links" class="main-nav__links">
+                    <li class="active">
+                        <a href="../pages/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../pages/categorias.html">Categorias</a>
+                    </li>
+                    <li>
+                        <a href="../pages/produtos.html">Produtos</a>
+                    </li>
+                    <li>
+                        <a href="../pages/programa.html">Programa Saúde em Evolução</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</nav>
+        <!-- partial -->
 
     <main>
         <div class="container">
@@ -222,32 +258,57 @@
 
     <!-- partial:../partials/__footer.html -->
     <footer class="main-footer wow fadeInUp" data-wow-delay="0.3s">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="brand">
-                        <img src="../images/brands/biolabfarmaceutica.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-4 justify-content-lg-center">
-                    <div class="caption">
-                        <a href="phone:+5508007246522"></a>
-                        <sm class="mail">
-                            faleconosco@biolabfarma.com.br
-                        </sm>
-                    </div>
-                </div>
-                <div class="col-lg-4 justify-content-lg-end">
-                    <h3 class="title">
-                        EVOLUIR É VITAL
-                    </h3>
-                </div>
+   <div class="container">
+       <div class="row">
+           <div class="col-lg-4">
+               <div class="brand">
+                   <img src="../images/brands/biolabfarmaceutica.png" alt="">
+               </div>
+           </div>
+           <div class="col-lg-4 justify-content-lg-center">
+            <div class="caption">
+                <a href="phone:+5508007246522"></a>
+                <sm class="mail">
+                    faleconosco@biolabfarma.com.br
+                </sm>
             </div>
-        </div>
-    </footer>
+           </div>
+           <div class="col-lg-4 justify-content-lg-end">
+            <h3 class="title">
+                EVOLUIR É VITAL
+            </h3>
+           </div>
+       </div>
+   </div>
+</footer>
     <!-- partial -->
 
     <!-- partial:../partials/__footer.html -->
+
+    <footer class="main-footer wow fadeInUp" data-wow-delay="0.3s">
+   <div class="container">
+       <div class="row">
+           <div class="col-lg-4">
+               <div class="brand">
+                   <img src="../images/brands/biolabfarmaceutica.png" alt="">
+               </div>
+           </div>
+           <div class="col-lg-4 justify-content-lg-center">
+            <div class="caption">
+                <a href="phone:+5508007246522"></a>
+                <sm class="mail">
+                    faleconosco@biolabfarma.com.br
+                </sm>
+            </div>
+           </div>
+           <div class="col-lg-4 justify-content-lg-end">
+            <h3 class="title">
+                EVOLUIR É VITAL
+            </h3>
+           </div>
+       </div>
+   </div>
+</footer>
 
     <!-- partial -->
 
