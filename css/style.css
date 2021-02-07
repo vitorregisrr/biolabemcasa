@@ -1253,6 +1253,7 @@ textarea.form-control {
   font-weight: bold;
   color: #fff;
   margin-bottom: -3px;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 992px) {
