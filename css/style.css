@@ -1333,7 +1333,7 @@ textarea.form-control {
 @media screen and (max-width: 768px) {
   .popup__body .subtitle {
     font-size: 22px;
-    padding-top: 6px;
+    padding-top: 36px;
   }
 }
 
@@ -1362,6 +1362,7 @@ textarea.form-control {
 @media screen and (max-width: 768px) {
   .popup__body .brand {
     width: 230px;
+    margin-bottom: 25px;
   }
 }
 
