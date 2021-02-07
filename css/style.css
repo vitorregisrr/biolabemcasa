@@ -472,7 +472,8 @@ b {
 }
 
 .main-header__search .link .img {
-  margin-right: 3px;
+  margin-right: 6px;
+  width: 18px;
 }
 
 @media screen and (max-width: 576px) {

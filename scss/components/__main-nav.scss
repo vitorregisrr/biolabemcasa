@@ -89,7 +89,8 @@
             }
 
             .img {
-                margin-right: 3px;
+                margin-right: 6px;
+                width: 18px;
 
                 @media screen and (max-width: $bp-SM){
                     width: 12px;
