@@ -6,30 +6,6 @@
 
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -95,30 +71,6 @@
             crossorigin="anonymous"> -->
 
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
         <!-- partial -->
     </head>
@@ -241,9 +193,9 @@
    <div class="container">
        <div class="row">
            <div class="col-6 col-lg-4">
-               <div class="brand">
+               <a href="#" class="brand">
                    <img src="../images/brands/biolabfarmaceutica.png" alt="">
-               </div>
+               </a>
            </div>
            <div class="col-6 col-lg-4 justify-content-lg-center">
             <div class="caption">
@@ -271,9 +223,9 @@
    <div class="container">
        <div class="row">
            <div class="col-6 col-lg-4">
-               <div class="brand">
+               <a href="#" class="brand">
                    <img src="../images/brands/biolabfarmaceutica.png" alt="">
-               </div>
+               </a>
            </div>
            <div class="col-6 col-lg-4 justify-content-lg-center">
             <div class="caption">
@@ -293,6 +245,123 @@
        </div>
    </div>
 </footer>
+
+    <!-- partial -->
+
+    <!-- partial:../partials/__popups.html -->
+    <div class="popup" id="popup-novosite">
+    <div class="popup__content">
+        <button data-toggle="popup" data-target="#popup-novosite" class="close">
+            <img src="../images/ico/close.png" alt="">
+        </button>
+
+        <div class="popup__header">
+            <h3 class="title">
+                Novo Site
+            </h3>
+        </div>
+        <div class="popup__body">
+            <img src="../images/brands/biolabemcasa.png" alt="" class="brand"/>
+            <p class="desc">
+                O Biolab em Casa mudou e agora está mais próximo de você. Receba seu produto
+                Biolab por meio de nossos parceiros,disponíveis em todo o Brasil.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="popup-cadastro">
+    <div class="popup__content">
+        <button data-toggle="popup" data-target="#popup-cadastro" class="close">
+            <img src="../images/ico/close.png" alt="">
+        </button>
+        <div class="popup__body">
+            <h3 class="subtitle">
+                Faça seu cadastro para receber as novidades:
+            </h3>
+
+            <form id="form-inscricao" class="popup__body-form" action="#" class="row">
+                <div class="col-12">
+                    <input class="input-grad" type="text" placeholder="Nome:" name="nome"/>
+                </div>
+                <div class="col-8">
+                    <input class="input-grad" type="text" placeholder="Cidade:" name="cidade"/>
+                </div>
+                <div class="col-4">
+                    <input class="input-grad" type="text" placeholder="UF:" name="uf"/>
+                </div>
+                <div class="col-12">
+                    <input class="input-grad" type="text" placeholder="Telefone:" name="telefone"/>
+                </div>
+                <div class="col-12">
+                    <input class="input-grad" type="text" placeholder="Email:" name="email"/>
+                </div>
+                <div class="col-12">
+                    <input
+                        class="input-grad"
+                        type="text"
+                        placeholder="Confirmação de e-mail:"
+                        name="emailconfirm"/>
+                </div>
+
+                <div class="col-12">
+                    *Todos os campos são de preenchimento obrigatório
+                </div>
+
+                <div class="col-12">
+                    <label class="radio-white" for="politicas">
+                        <input type="radio" id="politicas" name="politicas" value="1" checked/>
+                        <span class="mask" style="margin-top: 2px; width: 11px; height: 10px"></span>
+                        <span class="text" for="politicas">Declaro que, ao clicar no botão ENVIAR,
+                            abaixo, estou de acordocom as Políticas de Privacidade e os Termos de Uso
+                            definidos pela Biolab.</span>
+                    </label>
+                </div>
+
+                <div class="col-12">
+                    <label class="radio-white" for="politicas">
+                        <input type="radio" id="politicas" name="politicas" value="1" checked/>
+                        <span class="mask" style="margin-top: 2px; width: 11px; height: 10px"></span>
+                        <span class="text" for="politicas">Declaro que, ao clicar no botão ENVIAR,
+                            abaixo, estou de acordocom as Políticas de Privacidade e os Termos de Uso
+                            definidos pela Biolab.</span>
+                    </label>
+                </div>
+
+                <div class="col-12 d-flex justify-content-center">
+                    <div>
+                        <button class="btn-blue" type="submit">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="popup-explorer">
+    <div class="popup__content">
+        <button data-toggle="popup" data-target="#popup-explorer" class="close">
+            <img src="../images/ico/close.png" alt="">
+        </button>
+        <div class="popup__body">
+            <img src="../images/brands/biolabemcasa.png" alt="" class="brand"/>
+
+            <div class="popup__header sm">
+                <h3 class="title">
+                    Notamos que você está usando o navegador Internet Explorer.
+                </h3>
+            </div>
+
+            <p class="desc">
+                Nós não recomendamos usá-lo como o navegador padrão, já que o navegador está
+                suscetível a falhas de segurançae bugs de execução. Utilize outro navegador
+                para ter uma experiênciaainda melhor em nosso site.
+            </p>
+
+            <button class="btn-outline-grad" data-toggle="popup" data-target="#popup-explorer"></button>
+        </div>
+    </div>
+</div>
 
     <!-- partial -->
 

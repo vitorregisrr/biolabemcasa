@@ -1,0 +1,24 @@
+.popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0,132,191,1) 46%, rgba(128,183,76,1) 70%);
+    z-index: 13;
+
+    &__content{
+        background-color: #fff;
+        border-radius: 18px;
+        max-width: 800px;
+        max-height: 60%;
+        overflow-y: auto;
+        box-shadow: 3px 4px 26px rgba(0, 0, 0, 0.067);
+        width: 100%;
+        padding: 20px;
+    }
+}
+
