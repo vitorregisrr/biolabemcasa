@@ -3,7 +3,14 @@
 
     @media screen and (max-width: $bp-LG){
         padding-left: 20px;
-        padding-right: 16px;
+        padding-right: 19px;
+        padding-top: 40px;
+    }
+
+    @media screen and (max-width: $bp-SM){
+        padding-left: 0px;
+        padding-right: 0;
+        margin-bottom: 10px;
     }
 
     &__brand {
@@ -15,6 +22,14 @@
 
             @media screen and (max-width: $bp-MD){
                 width: 220px;
+            }
+
+            @media screen and (max-width: $bp-SM){
+                width: 180px;
+            }
+
+            @media screen and (max-width: 330px){
+                width: 130px;
             }
 
             &:hover {
@@ -32,6 +47,10 @@
             padding-left: 0;
             text-align: right;
             margin-left: auto;
+        }
+
+        @media screen and (max-width: $bp-SM){
+            padding-top: 10px;
         }
 
         .link {
@@ -52,12 +71,26 @@
                 font-size: 15px;
             }
 
+            @media screen and (max-width: $bp-SM){
+                font-size: 11px;
+                margin-bottom: 6px;
+            }
+
+            @media screen and (max-width: 330px){
+                font-size: 10px;
+            }
+
+
             &:hover {
                 margin-left: 7px;
             }
 
             .img {
                 margin-right: 3px;
+
+                @media screen and (max-width: $bp-SM){
+                    width: 12px;
+                }
             }
         }
 
@@ -76,6 +109,13 @@
                 width: 92%;
                 color: #fff;
                 padding: 3.5px 20px;
+
+                @media screen and (max-width: $bp-SM){
+                    padding-top: 2px;
+                    padding-bottom: 2px;
+                    font-size: 13px;
+                    padding-left: 15px;
+                }
 
                 @media screen and (max-width: $bp-LG){
                     width: 100%;
@@ -105,8 +145,18 @@
                     right: 5px;
                 }
 
+                @media screen and (max-width: $bp-SM){
+                    top: -.8px;
+                    right: 13px;
+                    width: 18px;
+                }
+
                 img {
                     width: 24px;
+
+                    @media screen and (max-width: $bp-SM){
+                        width: 18px;
+                    }
 
                     @include transition();
                     &:hover {
@@ -133,6 +183,10 @@
             padding-top: 0;
         }
 
+        @media screen and (max-width: $bp-SM){
+            padding-right: 5px;
+        }
+
         .sac {
             display: block;
             font-family: 'Kyrial B';
@@ -144,6 +198,16 @@
                 font-size: 16px;
                 margin-bottom: 10px;
             }
+
+            @media screen and (max-width: $bp-SM){
+               font-size: 11px;
+               margin-bottom: 6px;
+            }
+
+            @media screen and (max-width: 330px){
+                font-size: 10px;
+            }
+
 
             a {
                 color: #fff !important;
@@ -159,6 +223,12 @@
                     @media screen and (max-width: $bp-MD){
                         margin-left: 40px;
                     }
+
+                    @media screen and (max-width: $bp-SM){
+                        margin-left: 20px;
+                    }
+
+        
                 }
 
                 img {
@@ -168,6 +238,15 @@
                     @media screen and (max-width: $bp-MD){
                         height: 22px;
                     }
+
+                    @media screen and (max-width: $bp-SM){
+                        height: 18px;
+                    }
+
+                    @media screen and (max-width: 330px){
+                        height: 16px;
+                    }
+        
 
                     &:hover {
                         @include scale(1.1);
@@ -189,6 +268,10 @@
         padding-left: 20px;
         margin-bottom: -6px;
         margin-top: -2px;
+    }
+
+    @media screen and (max-width: $bp-SM){
+        padding-left: 10px;
     }
 
     &__links {
@@ -218,6 +301,16 @@
             transform: translateY(-30px);
             padding: 8px 6px;
             padding-left: 30px;
+        }
+
+        @media screen and (max-width: $bp-SM){
+            width: 300px;
+            left: 16px;
+            top: -53px;
+        }
+
+        @media screen and (max-width: 330px) {
+            width: 270px;
         }
 
         &.active {
@@ -251,19 +344,27 @@
                         bottom: 3px;
                         top: unset;
                         transform: translateX(-50%);
+                    }
 
+                    @media screen and (max-width: $bp-SM){
+                        height: 1px;
+                        width: 90%;
                     }
                 }
-            }
-
-            @media screen and (max-width: 330px) {
-                font-size: 15px;
             }
 
             @media screen and (max-width: $bp-LG) {
                 font-size: 18px;
                 width: 80%;
                 padding: 10px 0;
+            }
+
+            @media screen and (max-width: $bp-SM){
+                font-size: 14px;
+            }
+
+            @media screen and (max-width: 330px) {
+                font-size: 12px;
             }
             
             &.active,
@@ -284,6 +385,10 @@
                     max-width: 160px;
                     margin: 0 auto;
                     white-space: normal;
+                }
+
+                @media screen and (max-width: $bp-SM){
+                    max-width: 130px;
                 }
 
                 &:hover{
@@ -316,6 +421,15 @@
         @media screen and (max-width: $bp-LG){
             display: block;
         }
+        
+        @media screen and (max-width: $bp-SM){
+            padding-left: 5px;
+        }
+
+        @media screen and (max-width: 330px){
+            padding-left: 0;
+            transform: translateY(-40px);
+        }
 
         img{
             width: 38px;
@@ -324,10 +438,40 @@
         .times{
             display: none;
             width: 30px;
+
+            @media screen and (max-width: $bp-LG){
+                width: 23px;
+                margin-left: -10px;
+            }
+
+            @media screen and (max-width: $bp-SM){
+                width: 20px;
+                margin-left: 0;
+            }
+
+            @media screen and (max-width: 330px) {
+                width: 18px;
+                margin-top: 2px;
+                margin-left: 5px;
+            }
         }
 
         .bars{
             display: block;
+
+            @media screen and (max-width: $bp-LG){
+                width: 33px;
+                margin-left: -10px;
+            }
+
+            @media screen and (max-width: $bp-SM){
+                width: 26px;
+                margin-left: 0;
+            }
+
+            @media screen and (max-width: 320px){
+                width: 24px;
+            }
         }
 
         &.active{

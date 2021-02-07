@@ -1,0 +1,170 @@
+.home-produtos {
+    max-width: 100vw;
+    overflow: hidden;
+
+    &__title {
+        font-family: 'Trebuchet Bold';
+        font-weight: bold;
+        background-color: #0091C3;
+        color: #fff;
+        padding-top: 4px;
+        padding-bottom: 0;
+        text-align: center;
+        border-radius: 10px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: $bp-MD) {
+            padding: 3px 0 0;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+
+        .title {
+            @media screen and (max-width: $bp-LG) {
+                font-size: 24px;
+            }
+            @media screen and (max-width: $bp-MD) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__buttons {
+
+        @media screen and (max-width: $bp-MD){
+            padding: 3px;
+        }
+
+        &-item {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            background: none;
+            border: none;
+            margin-bottom: 16px;
+            @include transition();
+            &:hover {
+                @include scale(1.06);
+            }
+            &:focus {
+                outline: none;
+            }
+
+            .title {
+                font-family: 'Trebuchet';
+                text-transform: uppercase;
+                font-size: 18px;
+                text-align: center;
+                max-width: 150px;
+                color: #868686;
+                @media screen and (max-width: $bp-LG) {
+                    font-size: 16px;
+                }
+                @media screen and (max-width: $bp-MD) {
+                    font-size: 14px;
+                }
+                @media screen and (max-width: $bp-SM) {
+                    font-size: 10px;
+
+                    &.is-lg {
+                        font-size: 7px;
+                    }
+                }
+            }
+
+            img {
+                width: 83px;
+                object-fit: contain;
+                object-position: center center;
+                margin-bottom: 5px;
+                
+                @media screen and (max-width: $bp-LG) {
+                    width: 63px;
+                }
+                @media screen and (max-width: $bp-SM) {
+                    width: 48px;
+                }
+            }
+        }
+    }
+
+    &__tabs {
+        padding-bottom: 0;
+
+        @media screen and (max-width: $bp-MD){
+            margin-top: -20px;
+            margin-bottom: -15px;
+        }
+
+        &.active {
+            padding-bottom: 40px;
+            
+            @media screen and (max-width: $bp-LG) {
+                display: block;
+            }
+        }
+    }
+
+    &__tab {
+        background-color: #868686;
+        font-family: 'Trebuchet';
+        text-transform: uppercase;
+        padding: 8px 2px 0 8px;
+        margin-bottom: 0;
+        opacity: 0;
+        max-height: 0;
+        @include transition();
+        @media screen and (max-width: $bp-LG) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 10px 6px;
+            width: 100%;
+            animation: fadeIn 1s;
+            display: none;
+
+            &[data-active="true"] {
+                display: block;
+            }
+        }
+
+        img {
+            width: 69px;
+            margin-bottom: 12px;
+            @media screen and (max-width: $bp-MD) {
+                width: 56px;
+            }
+        }
+
+        .title {
+            font-size: 20px;
+            color: #BED732;
+            margin-bottom: 13px;
+            @media screen and (max-width: $bp-MD) {
+                font-size: 16px;
+            }
+        }
+
+        .desc {
+            margin-bottom: 0;
+            padding-bottom: 2px;
+            @media screen and (max-width: $bp-MD) {
+                font-size: 13px;
+                max-width: 260px;
+                margin: 0 auto;
+            }
+        }
+
+        &[data-active="true"] {
+            opacity: 1;
+            max-height: 1000px;
+            margin-bottom: 20px;
+        }
+    }
+}

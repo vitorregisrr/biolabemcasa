@@ -1,18 +1,119 @@
 .main-footer {
-    color: #fff;
-    color: $color-secondary;
-
-    @media screen and (max-width: $bp-LG){
-        padding: 22px 0;
+    padding: 30px 25px 26px 40px;
+    @media screen and (max-width: $bp-LG) {
+        padding-left: 20px;
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+    @media screen and (max-width: $bp-MD) {
+        padding-left: 25px;
+        padding-right: 35px;
+    }
+    @media screen and (max-width: $bp-SM) {
+        padding-left: 10px;
+        padding-right: 15px;
+        padding-top: 10px;
     }
 
-    p{
-        font-size: 15px;
-        margin-bottom: 0;
+    .brand {
+        img {
+            width: 180px;
+            @media screen and (max-width: $bp-LG) {
+                width: 160px;
+            }
+            @media screen and (max-width: $bp-MD) {
+                width: 160px;
+            }
+            @media screen and (max-width: $bp-SM) {
+                width: 126px;
+            }
+            @media screen and (max-width: 330px){
+                width: 113px;
+            }
+        }
+    }
 
-        @media screen and (max-width: $bp-LG){
-            font-size: 12px;
+    .caption {
+        padding-top: 20px;
+        text-align: center;
+
+        @media screen and (max-width: $bp-LG) {
+            text-align: right;
+            padding-top: 15px;
+        }
+
+        a {
+            color: #fff !important;
+        }
+
+        .sac {
+            display: block;
+            font-size: 27px;
+            font-family: 'Kyrial R';
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: -3px;
+            @media screen and (max-width: $bp-LG) {
+                font-size: 23px;
+            }
+            @media screen and (max-width: $bp-MD) {
+                font-size: 20px;
+            }
+            @media screen and (max-width: $bp-SM) {
+                font-size: 18px;
+            }
+            @media screen and (max-width: 390px){
+                font-size: 16px;
+                padding-top: 4px;
+            }
+            @media screen and (max-width: 330px){
+                font-size: 13px;
+                padding-top: 0;
+            }
+        }
+
+        .mail {
+            @media screen and (max-width: $bp-LG) {
+                font-size: 14px;
+            }
+            @media screen and (max-width: $bp-MD) {
+                font-size: 12px;
+            }
+            @media screen and (max-width: $bp-SM) {
+                font-size: 11px;
+            }
+            @media screen and (max-width: 330px){
+                font-size: 9px;
+            }
+        }
+
+    }
+
+    .title {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: 100%;
+        padding-bottom: 20px;
+        font-family: 'Kyrial R';
+        font-size: 35px;
+        @media screen and (max-width: $bp-LG) {
+            justify-content: center;
+            font-size: 32px;
             text-align: center;
+            padding-top: 5px;
+        }
+        @media screen and (max-width: $bp-MD) {
+            font-size: 26px;
+            padding-top: 0;
+        }
+
+        @media screen and (max-width: $bp-SM) {
+            padding-top: 6px;
+            font-size: 23px;
+        }
+        @media screen and (max-width: 330px){
+            font-size: 19px;
         }
     }
 }

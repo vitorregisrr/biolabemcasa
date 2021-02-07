@@ -1,0 +1,41 @@
+.home-title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Trebuchet';
+    color: #0091C3;
+    text-align: center;
+
+    .sm{
+        font-size: 20px;
+        max-width: 360px;
+        margin-right: 90px;
+        margin-left: -30px;
+
+        @media screen and (max-width: $bp-LG){
+            margin-left: 0;
+            margin-right: 0;
+            font-size: 17px;
+            margin-top: -14px;
+        }
+
+        @media screen and (max-width: $bp-MD){
+            font-size: 13px;
+            max-width: 230px;
+        }
+    }
+
+    .lg{
+        font-size: 22px;
+
+        @media screen and (max-width: $bp-LG){
+            max-width: unset;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        @media screen and (max-width: $bp-MD){
+            font-size: 14px;
+            max-width: 230px;
+        }
+    }
+}

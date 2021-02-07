@@ -1,112 +1,74 @@
 .owl-carousel {
-    &.nav-center {
-        .owl-nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            width: 100%;
-            height: auto;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 1;
+    position: relative;
 
-            @media screen and(max-width: $bp-LG) {
-                top: 30%;
+    &.v2{
+        .owl-dots{
+            bottom: -18px;
+
+            @media screen and (max-width: $bp-MD){
+                bottom: -26px;
             }
 
-            button {
-                position: absolute;
-                color: $color-primary !important;
-                font-size: 40px !important;
-                width: 90px;
-                height: 70px;
-                opacity: 0.8;
-                text-align: center;
-                @include transition();
+            .owl-dot{
+                background-color: #fff;
 
-                &:hover {
-                    opacity: 1;
+                &.active{
+                    background-color: #0091C3;
+                    opacity: .8;
                 }
 
-                &:focus {
-                    outline: none;
-                }
-
-                @media screen and(max-width: $bp-SM) {
-                    width: 40px;
-                    height: 40px;
-                }
-            }
-
-            .owl-prev {
-                left: -13%;
-            }
-
-            .owl-next {
-                right: -13%;
-            }
-
-            @media screen and(max-width: $bp-MD) {
-                .owl-prev {
-                    left: -17%;
-                }
-
-                .owl-next {
-                    right: -17%;
-                }
-            }
-
-            @media screen and(max-width: 1390px) and (min-width: 1246px) {
-                .owl-prev {
-                    left: -10%;
-                }
-
-                .owl-next {
-                    right: -10%;
-                }
-            }
-
-            @media screen and(max-width: 1300px) and (min-width: 1000px) {
-                .owl-prev {
-                    left: -8%;
-                }
-
-                .owl-next {
-                    right: -8%;
-                }
-            }
-
-            @media screen and(max-width: $bp-SM) {
-                height: auto;
-
-                .owl-prev {
-                    left: -4%;
-                }
-
-                .owl-next {
-                    right: -4%;
+                &::after{
+                    display: none;
                 }
             }
         }
     }
 
     .owl-dots {
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 40px 0;
 
         .owl-dot {
-            width: 12px;
-            height: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.699);
+            position: relative;
+            width: 10px;
+            height: 10px;
+            background-color: #DBDBDB;
             border-radius: 50%;
             margin-right: 10px;
+            box-shadow: 5px 4px 10px #a3a3a3;
             cursor: pointer;
+            @include transition();
+
+            @media screen and (max-width: $bp-MD){
+                width: 6px;
+                height: 6px;
+            }
+
+            &:after{
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 140%;
+                height: 140%;
+                border-radius: 50%;
+                border: 1px solid #DBDBDB;
+                @include transition();
+            }
 
             &.active {
-                background-color: #b57b30;
+                background-color: #A0B73A;
+
+                &:after{
+                    border: 1px solid #A0B73A;
+                }
             }
 
             &:focus,
@@ -116,14 +78,4 @@
         }
     }
 
-
-}
-
-.owl-center .owl-stage {
-    @media screen and (min-width: $bp-LG) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100% !important;
-    }
 }
