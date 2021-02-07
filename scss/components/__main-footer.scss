@@ -12,7 +12,7 @@
     @media screen and (max-width: $bp-SM) {
         padding-left: 10px;
         padding-right: 15px;
-        padding-top: 10px;
+        padding-top: 3px;
     }
 
     .brand {
@@ -25,7 +25,7 @@
                 width: 160px;
             }
             @media screen and (max-width: $bp-SM) {
-                width: 126px;
+                width: 120px;
             }
             @media screen and (max-width: 330px){
                 width: 113px;
@@ -63,7 +63,7 @@
                 font-size: 18px;
             }
             @media screen and (max-width: 390px){
-                font-size: 16px;
+                font-size: 15px;
                 padding-top: 4px;
             }
             @media screen and (max-width: 330px){
@@ -80,7 +80,7 @@
                 font-size: 12px;
             }
             @media screen and (max-width: $bp-SM) {
-                font-size: 11px;
+                font-size: 9px;
             }
             @media screen and (max-width: 330px){
                 font-size: 9px;
@@ -109,8 +109,8 @@
         }
 
         @media screen and (max-width: $bp-SM) {
-            padding-top: 6px;
-            font-size: 23px;
+            padding-top: 0px;
+            font-size: 22px;
         }
         @media screen and (max-width: 330px){
             font-size: 19px;
