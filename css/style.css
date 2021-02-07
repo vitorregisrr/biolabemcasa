@@ -1301,7 +1301,7 @@ textarea.form-control {
 
 @media screen and (max-width: 576px) {
   .main-footer .caption .mail {
-    font-size: 9px;
+    font-size: 10px;
   }
 }
 
@@ -1340,7 +1340,7 @@ textarea.form-control {
 @media screen and (max-width: 576px) {
   .main-footer .title {
     padding-top: 0px;
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
