@@ -1,69 +1,77 @@
-.btn-transparent{
+.btn-transparent {
     background: none !important;
     border: none;
     outline: none;
     font-weight: bold;
     cursor: pointer;
-    
-    &:active, &:focus{
+    &:active,
+    &:focus {
         border: none;
         outline: none;
     }
 }
 
-.btn-flag{
-    display: inline-block;
-    width: 30px;
+.btn-blue {
+    font-family: 'Trebuchet Bold';
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #0080BB;
+    color: #fff;
+    line-height: 1.2;
+    padding: 0 17px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 10px;
+    @include transition();
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        @include scale(1.03);
+    }
+}
+
+.btn-outline-grad {
+    position: relative;
+    font-family: 'Trebuchet Bold';
+    text-align: center;
+    color: #6F6F6E;
+    font-weight: bold;
+    background: none;
+    border: none;
+    background: linear-gradient(90deg, rgba(0,132,191,1) 46%, rgba(128,183,76,1) 70%);
+    margin-top: 10px;
+    border-radius: 9px;
     height: 30px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-left: 10px;
-    @include transition();
-
-    &:hover{
-        @include scale(1.05);
+    padding: 0 20px;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        .text {
+            color: #fff;
+        }
+        &::after {
+            background-color: rgba(0,132,191,1);
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        width: 97%;
+        height: 80%;
+        border-radius: 6px;
+        @include transition();
     }
 
-    @media screen and(max-width: $bp-LG) {
-        width: 20px;
-        height: 20px;
-        margin-top: 6px;
-    }
-    
-    &--pt{
-        background-image: url(../images/flags/pt.png);
-    }
-
-    &--ing{
-        background-image: url(../images/flags/ing.png);
-    }
-}
-
-.btn-primary{
-    min-height: 40px;
-    background-color: #f5ebd0 !important;
-    border: 1px solid #b57b30;
-    color: black;
-    font-family: 'Myriad Pro Bold';
-    @include transition();
-
-    &:hover{
-        background-color: #e4dabe;
-        color: black;
-    }
-}
-
-.btn-default{
-    min-height: 40px;
-    background-color: #dbdbdb !important;
-    border: 1px solid #b57b30;
-    color: black;
-    font-family: 'Myriad Pro Bold';
-    @include transition();
-
-    &:hover{
-        background-color: #e4dabe;
-        color: black;
+    .text {
+        font-size: 19px;
+        position: relative;
+        z-index: 2;
     }
 }

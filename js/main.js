@@ -45,7 +45,14 @@
             $(target).attr('data-active', true);
             $('.home-produtos__tabs').attr('data-active', true);
         }
-    })
+    });
+
+    $('[data-toggle="popup"]').click(function(event){
+        event.preventDefault();
+        var target = $(this).attr('data-target');
+        console.log(target)
+        $(target).toggleClass('visible');
+    });
 
     scrollTopBtn.on('click', function (e) {
         e.preventDefault();
@@ -53,6 +60,23 @@
             scrollTop: 0
         }, '300');
     });
+
+    var isIE = function msieversion() {
+
+        var ua = window.navigator.userAgent;
+        var msie = ua.indexOf("MSIE ");
+    
+        if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer, return version number
+        {
+            return true;
+        }
+    
+        return false;
+    }
+
+    if (isIE()) {
+        $('#popup-explorer').addClass('visible');
+    }
 
     window.dispatchEvent(new Event('resize'));
 

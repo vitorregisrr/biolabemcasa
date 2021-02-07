@@ -56,7 +56,7 @@
         .link {
             display: block;
             color: #fff;
-            margin-bottom: 15px;
+            margin-bottom: 8px;
             @include transition();
 
             @media screen and (max-width: $bp-LG){
