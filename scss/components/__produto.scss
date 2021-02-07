@@ -1,0 +1,97 @@
+.produto{
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    flex-direction: column;
+    display: block;
+    border: 2px solid #D9D9D9;
+    border-radius: 9px;
+    min-height: 100%;
+
+    @media screen and (ma-width: $bp-SM){
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    .body{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 20px 10px 16px;
+        text-transform: uppercase;
+        color: #9C9B9B !important;
+
+        .name{
+            font-size: 21px;
+            text-align: left;
+            width: 100%;
+        }
+
+        .subtitle{
+            font-family: 'Trebuchet';
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 16px;
+        }
+
+        .badge-saude{
+            position: absolute;
+            right: -3px;
+            top: 45%;
+            transform: translateY(-50%);
+            width: 110px;
+        }
+
+        .img{
+            img{
+                width: 150%;
+                margin: 0 auto;
+                margin-top: -5px;
+                margin-left: -20%;
+                @include transition();
+
+                &:hover{
+                    @include scale(1.05);
+                }
+            }
+        }
+    }
+
+    .footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        border-top: 2px solid #D9D9D9;
+
+        .btn-blue--icon{
+            background: none;
+            border: none;
+            background-color: #0091C3;
+            color: #fff;
+            padding: 3px 10px;
+            border-radius: 8px;
+            font-size: 17px;
+            text-transform: uppercase;
+
+            &:hover{
+                img{
+                    margin-left: 20px;
+                }
+            }
+
+            img{
+                margin-left: 12px;
+                width: 21px;
+                @include transition();
+            }
+
+            &:focus{
+                outline: none;
+                color: #fff;
+            }
+        }
+    }
+}
