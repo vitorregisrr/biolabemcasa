@@ -140,7 +140,7 @@
 
             button {
                 position: absolute;
-                top: 1px;
+                top: 2px;
                 right: 38px;
                 background: none;
                 border: none;
@@ -419,6 +419,7 @@
         position: relative;
         transform: translateY(-36px);
         padding-left: 20px;
+        width: 40px;
         z-index: 12;
         cursor: pointer;
 

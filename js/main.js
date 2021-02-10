@@ -35,6 +35,7 @@
 
     $('[data-toggle="produto-tab"]').click( function(){
         var target = $(this).attr('data-target');
+        var isActive = $(target).attr('data-active') === 'true' ? true : false;
         var screenW = window.innerWidth;
 
         if(screenW < 1200){
@@ -42,7 +43,7 @@
             $(target).attr('data-active', true);
             $('.home-produtos__tabs').attr('data-active', true);
         }else{
-            $(target).attr('data-active', true);
+            $(target).attr('data-active', !isActive);
             $('.home-produtos__tabs').attr('data-active', true);
         }
     });
