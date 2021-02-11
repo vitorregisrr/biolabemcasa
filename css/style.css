@@ -2253,6 +2253,43 @@ textarea.form-control {
   outline: none;
 }
 
+.busca-pg__letters ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 26px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .busca-pg__letters ul {
+    padding-bottom: 0;
+  }
+}
+
+.busca-pg__letters ul li {
+  font-family: 'Kyrial R';
+  font-size: 20px;
+  margin: 0 7px;
+}
+
+@media screen and (max-width: 768px) {
+  .busca-pg__letters ul li {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .busca-pg__letters ul li {
+    font-size: 12px;
+  }
+}
+
+.busca-pg__letters ul a {
+  color: #a5a5a5 !important;
+}
+
 .busca-pg__list {
   display: flex;
   flex-direction: column;
@@ -2265,6 +2302,13 @@ textarea.form-control {
   padding-bottom: 13px;
   margin-bottom: 30px;
   padding-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .busca-pg__list .item.has-b-r {
+    border-right: 1.6px solid #adadad;
+    padding-right: 13px;
+  }
 }
 
 .busca-pg__list .item .name {
@@ -2309,7 +2353,7 @@ textarea.form-control {
   padding-top: 4px;
   font-size: 18px;
   color: #868686;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 768px) {
