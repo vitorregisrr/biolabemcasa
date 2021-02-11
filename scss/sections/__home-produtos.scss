@@ -1,7 +1,5 @@
 .home-produtos {
-    max-width: 100vw;
-    overflow: hidden;
-
+    
     &__title {
         font-family: 'Trebuchet Bold';
         font-weight: bold;
@@ -80,7 +78,7 @@
                     font-size: 10px;
 
                     &.is-lg {
-                        font-size: 7px;
+                        font-size: 9px;
                     }
                 }
             }

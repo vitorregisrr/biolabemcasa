@@ -40,6 +40,7 @@ html{
     border-radius: 9px;
     background-color: #fff;
     padding: 25px 40px 30px 44px;
+    overflow: visible;
     
     @media screen and (max-width: $bp-MD){
         padding: 25px 13px 10px 13px;

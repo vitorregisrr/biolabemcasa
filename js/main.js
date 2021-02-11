@@ -40,8 +40,8 @@
 
         if(screenW < 1200){
             $('.home-produtos__tab').attr('data-active', false);
-            $(target).attr('data-active', true);
-            $('.home-produtos__tabs').attr('data-active', true);
+            $(target).attr('data-active', !isActive);
+            $('.home-produtos__tabs').attr('data-active', !isActive);
         }else{
             $(target).attr('data-active', !isActive);
             $('.home-produtos__tabs').attr('data-active', true);
