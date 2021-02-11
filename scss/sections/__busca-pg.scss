@@ -37,6 +37,12 @@
             padding-top: 30px;
             padding-bottom: 26px;
             flex-wrap: wrap;
+
+            @media screen and (min-width: 767px) and (max-width: 800px){
+                max-width: 60%;
+                margin: 0 auto;
+            }
+
             @media screen and (max-width: $bp-MD) {
                 padding-bottom: 0;
             }
@@ -51,10 +57,20 @@
                 @media screen and (max-width: $bp-SM) {
                     font-size: 12px;
                 }
+
+                &:hover, &.active{
+                    a{
+                        color: #0091C3;
+                    }
+                }
+
+                &:hover{
+                    text-decoration: underline;
+                }
             }
 
             a {
-                color: rgb(165, 165, 165) !important;
+                color: rgb(165, 165, 165);
             }
         }
     }

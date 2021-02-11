@@ -2262,6 +2262,13 @@ textarea.form-control {
   flex-wrap: wrap;
 }
 
+@media screen and (min-width: 767px) and (max-width: 800px) {
+  .busca-pg__letters ul {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .busca-pg__letters ul {
     padding-bottom: 0;
@@ -2286,8 +2293,16 @@ textarea.form-control {
   }
 }
 
+.busca-pg__letters ul li:hover a, .busca-pg__letters ul li.active a {
+  color: #0091C3;
+}
+
+.busca-pg__letters ul li:hover {
+  text-decoration: underline;
+}
+
 .busca-pg__letters ul a {
-  color: #a5a5a5 !important;
+  color: #a5a5a5;
 }
 
 .busca-pg__list {
