@@ -1328,12 +1328,12 @@ textarea.form-control {
   font-family: 'Trebuchet Bold';
   font-weight: bold;
   font-size: 26px;
-  padding-top: 43px;
+  padding-top: 45px;
   margin-bottom: 30px;
   color: #0084bf;
 }
 
-@media screen and (min-width: 728px) and (max-width: 920px) {
+@media screen and (min-width: 768px) and (max-width: 769px) {
   .popup__body .subtitle {
     padding-top: 5px;
   }
