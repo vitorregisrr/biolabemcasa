@@ -1333,7 +1333,13 @@ textarea.form-control {
   color: #0084bf;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 728px) and (max-width: 920px) {
+  .popup__body .subtitle {
+    padding-top: 5px;
+  }
+}
+
+@media screen and (max-width: 576px) {
   .popup__body .subtitle {
     font-size: 22px;
     padding-top: 96px;

@@ -92,7 +92,11 @@
             margin-bottom: 30px;
             color: rgba(0,132,191,1);
 
-            @media screen and (max-width: $bp-MD) {
+            @media screen and (min-width: 728px) and (max-width: 920px){
+                padding-top: 5px;
+            }
+
+            @media screen and (max-width: $bp-SM) {
                 font-size: 22px;
                 padding-top: 96px;
             }
