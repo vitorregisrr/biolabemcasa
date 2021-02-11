@@ -2262,7 +2262,7 @@ textarea.form-control {
   flex-wrap: wrap;
 }
 
-@media screen and (min-width: 767px) and (max-width: 800px) {
+@media screen and (min-width: 767px) and (max-width: 960px) {
   .busca-pg__letters ul {
     max-width: 60%;
     margin: 0 auto;
