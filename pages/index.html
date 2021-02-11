@@ -4,8 +4,6 @@
     <head>
         <!-- partial:../partials/__head.html -->
 
-        
-        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -44,7 +42,6 @@
         <meta name="twitter:site" content="@app">
 
         <!-- Load Font -->
-       
 
         <!-- Vendor JS -->
         <script src="../vendors/js/vendor.bundle.base.js" defer></script>
@@ -70,8 +67,6 @@
             integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
             crossorigin="anonymous"> -->
 
-
-        
         <!-- partial -->
     </head>
 
@@ -79,83 +74,92 @@
         <!-- partial:../partials/__main-nav.html -->
 
         <header class="main-header">
-    <div class="container">
-        <div class="row justify-content-end">
-            <div class="col-7 order-1 col-lg-3">
-                <div class="main-header__brand wow fadeInLeft" data-wow-delay="0.3s">
-                    <a href="../pages/index.html">
-                        <img src="../images/brands/biolabemcasa.png" alt="Logo Paulo Freitas Ribeiro"/>
-                    </a>
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-7 order-1 col-lg-3">
+                        <div class="main-header__brand wow fadeInLeft" data-wow-delay="0.3s">
+                            <a href="../pages/index.html">
+                                <img src="../images/brands/biolabemcasa.png" alt="Logo Paulo Freitas Ribeiro"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-10 col-md-9 order-3 order-lg-2 col-lg-6">
+                        <form
+                            class="main-header__search wow fadeIn"
+                            form="GET"
+                            action="./busca.html"
+                            data-wow-delay="0.5s">
+                            <a
+                                href="#"
+                                data-toggle="popup"
+                                data-target="#popup-cadastro"
+                                for="search"
+                                class="link">
+                                <img class="img" src="../images/ico/arrow-right.png" alt="#">Cadastre-se para receber novidades da Biolab
+                            </a>
+                            <div class="search-box">
+                                <input type="text" placeholder="Faça sua busca">
+                                <button type="submit">
+                                    <img src="../images/ico/search-w.png" alt="#"/>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div
+                        class="col-5 order-2 order-lg-3 col-lg-3 wow fadeInRight"
+                        data-wow-delay="0.4s">
+                        <div class="main-header__contact">
+                            <div class="sac">
+                                <a href="phone:+5508007246522">
+                                    SAC 0800 724 6522
+                                </a>
+                            </div>
+                            <div class="social">
+                                <a href="#">
+                                    <img src="../images/ico/ico-facebook.png" alt="#" class="ico">
+                                </a>
+                                <a href="#">
+                                    <img src="../images/ico/ico-instagram.png" alt="#" class="ico">
+                                </a>
+                                <a href="#">
+                                    <img src="../images/ico/ico-linkedin.png" alt="#" class="ico">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-10 col-md-9 order-3 order-lg-2 col-lg-6">
-                <form class="main-header__search wow fadeIn" form="GET" action="./busca.html" data-wow-delay="0.5s">
-                    <a href="#" data-toggle="popup" data-target="#popup-cadastro" for="search" class="link">
-                       <img class="img" src="../images/ico/arrow-right.png" alt="#">Cadastre-se para receber novidades da Biolab
-                    </a>
-                    <div class="search-box">
-                        <input type="text" placeholder="Faça sua busca">
-                        <button type="submit">
-                            <img src="../images/ico/search-w.png" alt="#"/>
-                        </button>
-                    </div>
-                </form>
-            </div>
-            <div class="col-5 order-2 order-lg-3 col-lg-3 wow fadeInRight" data-wow-delay="0.4s">
-                <div class="main-header__contact">
-                    <div class="sac">
-                        <a href="phone:+5508007246522">
-                            SAC 0800 724 6522
-                        </a>
-                    </div>
-                    <div class="social">
-                        <a href="#">
-                            <img src="../images/ico/ico-facebook.png" alt="#" class="ico">
-                        </a>
-                        <a href="#">
-                            <img src="../images/ico/ico-instagram.png" alt="#" class="ico">
-                        </a>
-                        <a href="#">
-                            <img src="../images/ico/ico-linkedin.png" alt="#" class="ico">
-                        </a>
+        </header>
+
+        <nav class="main-nav wow fadeIn" data-wow-delay="0.2s" id="main-nav">
+            <div class="container">
+                <div class="main-nav__content">
+                    <div class="main-nav__menu">
+                        <buttton class="main-nav__toggler" data-toggle="nav-links">
+                            <img class="bars" src="../images/ico/toggler.png" alt=""/>
+                            <img class="times" src="../images/ico/times.png" alt=""/>
+                        </buttton>
+                        <ul id="nav-links" class="main-nav__links">
+                            <li class="active">
+                                <a href="../pages/index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="../pages/categorias.html">Categorias</a>
+                            </li>
+                            <li>
+                                <a href="../pages/produtos.html">Produtos</a>
+                            </li>
+                            <li>
+                                <a href="../pages/programa.html">Programa Saúde em Evolução</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</header>
+    </nav>
 
-<nav class="main-nav wow fadeIn" data-wow-delay="0.2s" id="main-nav">
-    <div class="container">
-        <div class="main-nav__content">
-            <div class="main-nav__menu">
-                <buttton
-                    class="main-nav__toggler"
-                    data-toggle="nav-links">
-                    <img class="bars" src="../images/ico/toggler.png" alt=""/>
-                    <img class="times" src="../images/ico/times.png" alt=""/>
-                </buttton>
-                <ul id="nav-links" class="main-nav__links">
-                    <li class="active">
-                        <a href="../pages/index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="../pages/categorias.html">Categorias</a>
-                    </li>
-                    <li>
-                        <a href="../pages/produtos.html">Produtos</a>
-                    </li>
-                    <li>
-                        <a href="../pages/programa.html">Programa Saúde em Evolução</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-</nav>
-
-        <!-- partial -->
+    <!-- partial -->
 
     <main>
         <div class="container">
@@ -522,7 +526,14 @@
                     data-wow-delay="0.3s">
                     <div class="home-banner__carousel owl-carousel owl-default v2">
                         <div class="item">
-                            <img src="../images/bg/banner-1.png" alt="">
+
+                            <!-- usar o exemplo abaixo para banner responsivo em todos os
+                                 banners de imagens: -->
+                            <!-- desktop -->
+                            <img class="d-none d-lg-block" src="../images/bg/banner-1.png" alt="">
+                            <!-- mobile -->
+                            <img class="d-block d-lg-none" src="../images/bg/banner-1.png" alt="">
+                            
                         </div>
                         <div class="item">
                             <img src="../images/bg/banner-10.png" alt="">
@@ -538,37 +549,37 @@
 
     <!-- partial:../partials/__footer.html -->
     <footer class="main-footer wow fadeInUp" data-wow-delay="0.3s">
-   <div class="container">
-       <div class="row">
-           <div class="col-6 col-lg-4">
-               <a href="#" class="brand">
-                   <img src="../images/brands/biolabfarmaceutica.png" alt="">
-               </a>
-           </div>
-           <div class="col-6 col-lg-4 justify-content-lg-center">
-            <div class="caption">
-                <a href="phone:+5508007246522" class="sac">SAC 0800 724 6522</a>
-                <a href="mailto:faleconosco@biolabfarma.com.br">
-                    <sm class="mail">
-                        faleconosco@biolabfarma.com.br
-                    </sm>
-                </a>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-lg-4">
+                    <a href="#" class="brand">
+                        <img src="../images/brands/biolabfarmaceutica.png" alt="">
+                    </a>
+                </div>
+                <div class="col-6 col-lg-4 justify-content-lg-center">
+                    <div class="caption">
+                        <a href="phone:+5508007246522" class="sac">SAC 0800 724 6522</a>
+                        <a href="mailto:faleconosco@biolabfarma.com.br">
+                            <sm class="mail">
+                                faleconosco@biolabfarma.com.br
+                            </sm>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 justify-content-lg-end">
+                    <h3 class="title">
+                        EVOLUIR É VITAL
+                    </h3>
+                </div>
             </div>
-           </div>
-           <div class="col-12 col-lg-4 justify-content-lg-end">
-            <h3 class="title">
-                EVOLUIR É VITAL
-            </h3>
-           </div>
-       </div>
-   </div>
-</footer>
+        </div>
+    </footer>
     <!-- partial -->
     <!-- partial:../partials/__popups.html -->
     <div class="popup visible" id="popup-novosite">
-    <div class="popup__content h-sm px-3 px-lg-5">
-        <button data-toggle="popup" data-target="#popup-novosite" class="closee">
-            <img src="../images/ico/close.png" alt="#"></button>
+        <div class="popup__content h-sm px-3 px-lg-5">
+            <button data-toggle="popup" data-target="#popup-novosite" class="closee">
+                <img src="../images/ico/close.png" alt="#"></button>
             <div class="popup__header">
                 <h3 class="title">
                     Novo
@@ -589,100 +600,100 @@
         <div class="popup__content">
             <button data-toggle="popup" data-target="#popup-cadastro" class="closee">
                 <img src="../images/ico/close.png" alt=""></button>
-                <div class="popup__body">
-                    <h3 class="subtitle">
-                        Faça seu cadastro para receber as novidades:
+            <div class="popup__body">
+                <h3 class="subtitle">
+                    Faça seu cadastro para receber as novidades:
+                </h3>
+
+                <form id="form-inscricao" class="popup__body-form row" action="#">
+                    <div class="col-12">
+                        <input class="input-grad" type="text" placeholder="Nome:" name="nome"/>
+                    </div>
+                    <div class="col-8">
+                        <input class="input-grad" type="text" placeholder="Cidade:" name="cidade"/>
+                    </div>
+                    <div class="col-4">
+                        <input class="input-grad" type="text" placeholder="UF:" name="uf"/>
+                    </div>
+                    <div class="col-12">
+                        <input class="input-grad" type="text" placeholder="Telefone:" name="telefone"/>
+                    </div>
+                    <div class="col-12">
+                        <input class="input-grad" type="text" placeholder="Email:" name="email"/>
+                    </div>
+                    <div class="col-12">
+                        <input
+                            class="input-grad"
+                            type="text"
+                            placeholder="Confirmação de e-mail:"
+                            name="emailconfirm"/>
+                    </div>
+
+                    <div class="col-12">
+                        <small>
+                            *Todos os campos são de preenchimento obrigatório
+                        </small>
+                    </div>
+
+                    <div class="col-12 pt-2 pt-lg-3">
+                        <label class="custom-radio" for="politicas">
+                            <input type="checkbox" id="politicas" name="politicas"/>
+                            <span class="mask"></span>
+                            <span class="text">Declaro que, ao clicar no botão ENVIAR, abaixo, estou de
+                                acordo com as Políticas de Privacidade e os Termos de Uso definidos pela Biolab.</span>
+                        </label>
+                    </div>
+
+                    <div class="col-12">
+                        <label class="custom-radio" for="newsletter">
+                            <input type="checkbox" id="newsletter" name="newsletter"/>
+                            <span class="mask"></span>
+                            <span class="text">Desejo receber por e-mail informações sobre produtos,
+                                marcase serviços oferecidos pela Biolab e por suas empresas coligadas.</span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center">
+                        <div>
+                            <button class="btn-blue" type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-explorer">
+        <div class="popup__content">
+            <button data-toggle="popup" data-target="#popup-explorer" class="closee">
+                <img src="../images/ico/close.png" alt=""></button>
+            <div class="popup__body px-2 px-lg-4">
+                <img src="../images/brands/biolabemcasa-b.png" alt="" class="brand"/>
+
+                <div class="popup__header sm">
+                    <h3 class="title">
+                        Notamos que você está usando o navegador Internet Explorer.
                     </h3>
+                </div>
 
-                    <form id="form-inscricao" class="popup__body-form row" action="#">
-                        <div class="col-12">
-                            <input class="input-grad" type="text" placeholder="Nome:" name="nome"/>
-                        </div>
-                        <div class="col-8">
-                            <input class="input-grad" type="text" placeholder="Cidade:" name="cidade"/>
-                        </div>
-                        <div class="col-4">
-                            <input class="input-grad" type="text" placeholder="UF:" name="uf"/>
-                        </div>
-                        <div class="col-12">
-                            <input class="input-grad" type="text" placeholder="Telefone:" name="telefone"/>
-                        </div>
-                        <div class="col-12">
-                            <input class="input-grad" type="text" placeholder="Email:" name="email"/>
-                        </div>
-                        <div class="col-12">
-                            <input
-                                class="input-grad"
-                                type="text"
-                                placeholder="Confirmação de e-mail:"
-                                name="emailconfirm"/>
-                        </div>
+                <p class="desc mx-0 pt-2 px-2 px-lg-5">
+                    Nós não recomendamos usá-lo como o navegador padrão, já que o navegador está
+                    suscetível a falhas de segurança e bugs de execução.<br/>Utilize outro navegador para ter uma experiência ainda melhor em nosso site.
+                </p>
 
-                        <div class="col-12">
-                            <small>
-                                *Todos os campos são de preenchimento obrigatório
-                            </small>
-                        </div>
-
-                        <div class="col-12 pt-2 pt-lg-3">
-                            <label class="custom-radio" for="politicas">
-                                <input type="checkbox" id="politicas" name="politicas"/>
-                                <span class="mask"></span>
-                                <span class="text">Declaro que, ao clicar no botão ENVIAR, abaixo, estou de
-                                    acordo com as Políticas de Privacidade e os Termos de Uso definidos pela Biolab.</span>
-                            </label>
-                        </div>
-
-                        <div class="col-12">
-                            <label class="custom-radio" for="newsletter">
-                                <input type="checkbox" id="newsletter" name="newsletter"/>
-                                <span class="mask"></span>
-                                <span class="text">Desejo receber por e-mail informações sobre produtos,
-                                    marcase serviços oferecidos pela Biolab e por suas empresas coligadas.</span>
-                            </label>
-                        </div>
-
-                        <div class="col-12 d-flex justify-content-center">
-                            <div>
-                                <button class="btn-blue" type="submit">Enviar</button>
-                            </div>
-                        </div>
-                    </form>
+                <div class="d-flex justify-content-center">
+                    <button
+                        class="btn-outline-grad"
+                        data-toggle="popup"
+                        data-target="#popup-explorer">
+                        <span class="text">
+                            Ok, estou ciente
+                        </span>
+                    </button>
                 </div>
             </div>
         </div>
-
-        <div class="popup" id="popup-explorer">
-            <div class="popup__content">
-                <button data-toggle="popup" data-target="#popup-explorer" class="closee">
-                    <img src="../images/ico/close.png" alt=""></button>
-                    <div class="popup__body px-2 px-lg-4">
-                        <img src="../images/brands/biolabemcasa-b.png" alt="" class="brand"/>
-
-                        <div class="popup__header sm">
-                            <h3 class="title">
-                                Notamos que você está usando o navegador Internet Explorer.
-                            </h3>
-                        </div>
-
-                        <p class="desc mx-0 pt-2 px-2 px-lg-5">
-                            Nós não recomendamos usá-lo como o navegador padrão, já que o navegador está
-                            suscetível a falhas de segurança e bugs de execução.<br/>Utilize outro navegador para ter uma experiência ainda melhor em nosso site.
-                        </p>
-
-                        <div class="d-flex justify-content-center">
-                            <button
-                                class="btn-outline-grad"
-                                data-toggle="popup"
-                                data-target="#popup-explorer">
-                                <span class="text">
-                                    Ok, estou ciente
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    </div>
     <!-- partial -->
 
 </body>
