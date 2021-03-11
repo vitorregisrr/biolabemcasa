@@ -1960,6 +1960,12 @@ textarea.form-control {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .home-produtos__buttons-item .overlay {
+    padding-top: 75px;
+  }
+}
+
 .home-produtos__buttons-item .overlay .desc {
   margin-bottom: 0;
   padding-bottom: 2px;

@@ -154,11 +154,16 @@
                     width: 140%;
                 }
 
+                
                 @media screen and (max-width: $bp-MD) and (min-height: 800px){
                     padding-top: 105px;
                     width: 110%;
                 }
-
+                
+                @media screen and (max-width: $bp-SM){
+                    padding-top: 75px;
+                }
+                
                 .desc {
                     margin-bottom: 0;
                     padding-bottom: 2px;
