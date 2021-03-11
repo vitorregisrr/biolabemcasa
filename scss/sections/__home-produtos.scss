@@ -1,5 +1,5 @@
 .home-produtos {
-    
+  
     &__title {
         font-family: 'Trebuchet Bold';
         font-weight: bold;
@@ -37,7 +37,7 @@
 
     &__buttons {
 
-        @media screen and (max-width: $bp-MD){
+        @media screen and (max-width: $bp-MD) and (max-height: 800px){
             padding: 3px;
         }
 
@@ -68,7 +68,7 @@
                 z-index: 2;
             }
 
-            @media screen and (max-width: $bp-MD){
+            @media screen and (max-width: $bp-MD) and (max-height: 800px){
                 margin-bottom: 3px;
             }
 
@@ -149,8 +149,13 @@
                     padding-top: 120px;
                 }
 
-                @media screen and (max-width: $bp-MD){
+                @media screen and (max-width: $bp-MD) and (max-height: 800px){
                     padding-top: 85px;
+                    width: 140%;
+                }
+
+                @media screen and (max-width: $bp-MD) and (min-height: 800px){
+                    padding-top: 105px;
                     width: 140%;
                 }
 
@@ -172,7 +177,7 @@
                         padding-right: 5px;
                     }
 
-                    @media screen and (max-width: $bp-MD){
+                    @media screen and (max-width: $bp-MD) and (max-height: 800px){
                         font-size: 9px;
                         padding-left: 0;
                         margin-right: 0;

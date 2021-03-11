@@ -1803,7 +1803,7 @@ textarea.form-control {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (max-height: 800px) {
   .home-produtos__buttons {
     padding: 3px;
   }
@@ -1843,7 +1843,7 @@ textarea.form-control {
   z-index: 2;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (max-height: 800px) {
   .home-produtos__buttons-item {
     margin-bottom: 3px;
   }
@@ -1946,9 +1946,16 @@ textarea.form-control {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (max-height: 800px) {
   .home-produtos__buttons-item .overlay {
     padding-top: 85px;
+    width: 140%;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-height: 800px) {
+  .home-produtos__buttons-item .overlay {
+    padding-top: 105px;
     width: 140%;
   }
 }
@@ -1974,7 +1981,7 @@ textarea.form-control {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (max-height: 800px) {
   .home-produtos__buttons-item .overlay .desc {
     font-size: 9px;
     padding-left: 0;
