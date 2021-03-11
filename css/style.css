@@ -1956,7 +1956,7 @@ textarea.form-control {
 @media screen and (max-width: 768px) and (min-height: 800px) {
   .home-produtos__buttons-item .overlay {
     padding-top: 105px;
-    width: 140%;
+    width: 110%;
   }
 }
 
