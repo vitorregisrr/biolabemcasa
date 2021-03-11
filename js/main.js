@@ -34,9 +34,14 @@
     });
 
     $('[data-toggle="produto-tab"]').click( function(){
-        // var isActive = $(this).attr('data-active') === 'true' ? true : false;
-        $('[data-toggle="produto-tab"]').attr('data-active', false);
-        $(this).attr('data-active', true);
+        var isActive = $(this).attr('data-active') === 'true' ? true : false;
+        
+        if(isActive){
+            $(this).attr('data-active', false);
+        }else{
+            $('[data-toggle="produto-tab"]').attr('data-active', false);
+            $(this).attr('data-active', true);
+        }
 
         // var target = $(this).attr('data-target');
         // var screenW = window.innerWidth;
